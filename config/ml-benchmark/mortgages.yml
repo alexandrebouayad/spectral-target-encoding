@@ -1,0 +1,19 @@
+dataset: mortgages
+drop: [Unique_ID, MORTGAGE NUMBER]
+num:
+  - MORTGAGE AMOUNT
+  - MORTGAGE PAYMENT
+  - GDS
+  - LTV
+  - TDS
+  - PROPERTY VALUE
+  - INCOME
+  - CREDIT SCORE
+  - RATE
+  - AMORTIZATION
+target: RESULT
+predict: FUNDED
+scoring: [roc_auc]
+n_splits: 10
+test_size: 0.2
+seed: 20210902

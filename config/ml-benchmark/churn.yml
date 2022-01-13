@@ -1,0 +1,15 @@
+dataset: churn
+drop: [phone_number]
+num:
+  - total_day_minutes
+  - total_day_charge
+  - total_eve_minutes
+  - total_night_minutes
+  - total_eve_charge
+  - total_night_charge
+target: class
+predict: "1"
+scoring: [roc_auc]
+n_splits: 10
+test_size: 0.2
+seed: 20210902

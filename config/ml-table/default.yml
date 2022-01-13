@@ -1,0 +1,64 @@
+---
+encoder: "drop"
+
+---
+encoder: SpectralTargetEncoder
+
+---
+encoder: SpectralTargetEncoder
+cv_grid: STEGrid
+cv_scoring: roc_auc
+
+---
+encoder: MLE-HBBMEncoder
+
+---
+encoder: MLE-HBBMEncoder
+encoder__max_iter: 1
+
+---
+encoder: MLE-HBBMEncoder
+encoder__max_iter: 5
+
+---
+encoder: MLE-HBBMEncoder
+encoder__max_iter: 10
+
+---
+encoder: MLE-HBBMEncoder
+encoder__max_iter: 50
+
+---
+encoder: JamesSteinEncoder
+encoder__random_state: 20210902
+
+---
+encoder: GLMMEncoder
+encoder__random_state: 20210902
+
+---
+encoder: TargetEncoder
+
+---
+encoder: TargetEncoder
+cv_grid: SmoothingGrid
+cv_scoring: roc_auc
+
+---
+encoder: TargetRegressorEncoder
+
+---
+classifier: LogisticRegression
+classifier__random_state: 20210902
+
+---
+classifier: RandomForestClassifier
+classifier__random_state: 20210902
+
+---
+classifier: GradientBoostingClassifier
+classifier__random_state: 20210902
+
+---
+classifier: MLPClassifier
+classifier__random_state: 20210902
