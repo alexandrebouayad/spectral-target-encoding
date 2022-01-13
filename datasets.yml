@@ -1,0 +1,59 @@
+amazon:
+  data: amazon.csv
+  drop:
+  numerical:
+  fill: "na"
+  target: target
+  predict: "1"
+
+churn:
+  data: churn.csv
+  drop:
+    - phone_number
+  numerical:
+    - total_day_minutes
+    - total_day_charge
+    - total_eve_minutes
+    - total_night_minutes
+    - total_eve_charge
+    - total_night_charge
+  fill: "na"
+  target: class
+  predict: "1"
+
+churn-cat:
+  data: churn.csv
+  drop:
+    - phone_number
+  numerical:
+  fill: "na"
+  target: class
+  predict: "1"
+
+mortgages:
+  data: mortgages.csv
+  drop:
+    - Unique_ID
+    - MORTGAGE NUMBER
+  numerical:
+    - MORTGAGE AMOUNT
+    - MORTGAGE PAYMENT
+    - GDS
+    - LTV
+    - TDS
+    - PROPERTY VALUE
+    - INCOME
+    - CREDIT SCORE
+    - RATE
+    - AMORTIZATION
+  fill: "na"
+  target: RESULT
+  predict: FUNDED
+
+toydataset:
+  data: toydataset.csv
+  drop:
+  numerical:
+  fill: "na"
+  target: target
+  predict: "1"

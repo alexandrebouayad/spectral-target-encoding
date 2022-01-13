@@ -1,7 +1,7 @@
 # Spectral Target Encoding
 
 This repository is the official implementation of [Spectral Target
-Encoding](http://aistats.org/aistats2022/).
+Encoding](https://iclr.cc).
 
 ## Prerequisites
 Python 3.9
@@ -11,7 +11,7 @@ Python 3.9
 Clone this repository:
 
 ```
-git clone https://github.com/spectraltargetencoding/aistats-2022.git
+git clone https://github.com/spectraltargetencoding/iclr-2022.git
 ```
 
 To install the requirements, cd to the cloned repository, and run the following
@@ -27,7 +27,7 @@ Alternatively, you can use the same Docker image which was used by the authors
 to run the evaluations:
 
 ```
-docker run -it spectraltargetencoding/aistats-2022 bash
+docker run -it spectraltargetencoding/iclr-2022 bash
 ```
 
 The image is based upon Docker's official image `python:3.9.7-bullseye`; see the
